@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Helpinghands_v0.2</string>
+    <string name="title_activity_perfil">Perfil</string>
+    <string name="estado_prompt">Selecciona Estado</string>
+    <string name="distancia_prompt">Selecciona Distancia</string>
+
+    <string-array name="estados_array">
+        <item>Pendiente</item>
+        <item>En proceso</item>
+        <item>Finalizado</item>
+        <item>Cancelado</item>
+    </string-array>
+
+    <string-array name="distancias_array">
+        <item>1 km</item>
+        <item>5 km</item>
+        <item>10 km</item>
+        <item>20 km</item>
+    </string-array>
+</resources>

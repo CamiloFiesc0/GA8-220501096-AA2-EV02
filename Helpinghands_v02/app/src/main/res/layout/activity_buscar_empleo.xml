@@ -1,0 +1,87 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Botón regresar fijo arriba a la izquierda -->
+    <ImageButton
+        android:id="@+id/btnRegresar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Regresar"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/idasignado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID Asignado"/>
+
+    <!-- Spinner para Estado -->
+    <Spinner
+        android:id="@+id/spinnerEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/estado_prompt" />
+
+    <!-- Spinner para Distancia -->
+    <Spinner
+        android:id="@+id/spinnerDistancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/distancia_prompt" />
+
+    <EditText
+        android:id="@+id/idsolicitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID Solicitud"/>
+
+    <Button
+        android:id="@+id/btninsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar"/>
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"/>
+
+    <Button
+        android:id="@+id/btneliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"/>
+
+    <Button
+        android:id="@+id/btnver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver por ID"/>
+
+    <!-- NUEVO BOTÓN PARA VER TODO -->
+    <Button
+        android:id="@+id/btnverTodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Todos"/>
+
+    <!-- NUEVO TEXTVIEW PARA MOSTRAR RESULTADOS -->
+    <TextView
+        android:id="@+id/txtResultados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aquí aparecerán los registros"
+        android:textSize="16sp"
+        android:paddingTop="16dp"/>
+</LinearLayout>

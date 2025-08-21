@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".PerfilActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/helping_hands_arreglada" />
+
+
+    <Button
+        android:id="@+id/btnActualizarInfo"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#00ACC1"
+        android:text="Actualizar Informacion"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="485dp" />
+
+    <Button
+        android:id="@+id/btnBuscarEmpleo"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#00ACC1"
+        android:text="Buscar Empleo"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="546dp" />
+
+
+
+</LinearLayout>

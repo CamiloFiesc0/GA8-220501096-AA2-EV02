@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ActualizacionActivity">
+
+    <!-- Botón regresar fijo arriba a la izquierda -->
+    <ImageButton
+        android:id="@+id/btnRegresar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Regresar"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Contenido desplazable -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnRegresar"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Logo Helping Hands"
+                app:srcCompat="@drawable/helping_hands_arreglada" />
+
+            <!-- Título -->
+            <TextView
+                android:id="@+id/txttitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Actualizar Información"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Campo ID (solo lectura) -->
+            <EditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="ID"
+                android:inputType="number"
+                android:textSize="18sp" />
+
+            <!-- Nombre -->
+            <EditText
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+
+            <!-- Teléfono -->
+            <EditText
+                android:id="@+id/telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Teléfono"
+                android:inputType="phone"
+                android:textSize="18sp" />
+
+            <!-- Dirección -->
+            <EditText
+                android:id="@+id/direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Dirección"
+                android:inputType="textPostalAddress"
+                android:textSize="18sp" />
+
+            <!-- Correo -->
+            <EditText
+                android:id="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Correo"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp" />
+
+            <!-- Contraseña -->
+            <EditText
+                android:id="@+id/contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textSize="18sp" />
+
+            <!-- Edad -->
+            <EditText
+                android:id="@+id/edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Edad"
+                android:inputType="number"
+                android:textSize="18sp" />
+
+            <!-- Botón actualizar -->
+            <Button
+                android:id="@+id/btnmodificar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Actualizar"
+                android:textSize="18sp"
+                android:backgroundTint="@android:color/holo_blue_light" />
+
+            <!-- Botón eliminar -->
+            <Button
+                android:id="@+id/btneliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Eliminar"
+                android:textSize="18sp"
+                android:backgroundTint="@android:color/holo_red_light" />
+
+            <!-- Botón mostrar -->
+            <Button
+                android:id="@+id/btnmostrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Mostrar Usuarios"
+                android:textSize="18sp"
+                android:backgroundTint="@android:color/holo_green_light" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
